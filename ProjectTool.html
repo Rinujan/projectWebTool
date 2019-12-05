@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="ProjectTool.css">
+ <script type="text/javascript" src="Todolist/Assets/js/lib/jquery-3.4.1.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Crete+Round|Oxygen&display=swap&subset=latin-ext" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>New Project</title>
+  </head>
+  <body>
+
+<button id="newform"> <i class='fa fa-plus' onclick="openForm()"></i></button> 
+<div id="inputform">
+<div class="form-popup">
+  <form class="form-container">
+    
+    <label><strong>Project Name</strong></label>
+    <input id="projectname" type="text" placeholder="Enter Project Name">
+    <label><strong>Project Description</strong></label>
+    <input id="projectdesc" type="text" placeholder="Enter Project Description">
+    <label><strong>Resource Link</strong></label>
+    <input id="deliverables" type="text" placeholder="Enter Resources Link">
+    <button type="button" class="bg-secondary enter">Enter</button>
+    <button type="button" class="bg-info cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</div>
+  <div id="bodywithoutinput" class="container-fluid">
+  <div class="jumbotron jumbotron-fluid">
+  <h1 id="projectnam" class="display-4">Project Name </h1>
+  <p id="projectdes" class="lead">Project Description</p>
+  <hr class="my-4">
+  <a id="deliverable" class="btn btn-outline-info btn-lg" href="" role="button">Resources</a>
+  
+</div>
+  		<div class="row border justify-content-around">
+
+  			<div class="col-sm-3">
+  			<h2>Backlog</h2>
+  			<input id= "one" type="text" placeholder="Enter New Task">
+  			<ul id= "onelist" class="list-group list-group-flush">
+  				<li><i id="first" class="fa fa-plus"></i></li>
+  			</ul>
+  		</div>
+  			<div class="col-sm-3"> <h2>Ready</h2>
+  			 <input id="two" type="text" placeholder="Enter New Task">
+  			 <ul id="twolist" class="list-group list-group-flush">
+  			 	<li><i class="fa fa-plus"></i></li>
+  			 </ul>
+
+		</div>
+  			<div class="col-sm-3"> <h2>On Going</h2>
+  			<input id="three" type="text" placeholder="Enter New Task">
+  			<ul id="threelist" class="list-group list-group-flush">
+  				<li><i class="fa fa-plus"></i></li>
+  			</ul>
+		</div>
+  			<div class="col-sm-3"> <h2>Completed</h2> 			
+  			<input id="four" type="text" placeholder="Enter New Task">
+  			<ul id="fourlist" class="list-group list-group-flush">
+  				<li><i class="fa fa-plus"></i></li>
+  			</ul>
+		</div>
+
+  		</div>
+  </div>
+
+
+
+
+
+    <script type="text/javascript" src="ProjectTool.js"></script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
